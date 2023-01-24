@@ -4,23 +4,28 @@ public class BankAccount {
 
     // PROPERTIES
 
-    String firstName;
-    String lastName;
-    LocalDate dateOfBirth;
-    int accountNumber;
-    Float balance;
+    public String firstName;
+    public String lastName;
+    public LocalDate dateOfBirth;
+    public int accountNumber;
+    public double balance;
 
     // CONSTRUCTOR
 
-    public BankAccount (String firstName, String lastName, LocalDate dateOfBirth, int accountNumber, Float balance){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.accountNumber = accountNumber;
-        this.balance = balance;
+    public BankAccount (String inputFirstName, String inputLastName, LocalDate inputDateOfBirth, int inputAccountNumber, double balance){
+        this.firstName = inputFirstName;
+        this.lastName = inputLastName;
+        this.dateOfBirth = inputDateOfBirth;
+        this.accountNumber = inputAccountNumber;
+        this.balance = 0.0;
     }
 
     // METHODS / BEHAVIOURS
+
+//    Create a method called deposit() that takes in an amount updates the balance of the BankAccount.
+
+
+//    Create a method called withdrawal() that takes in an amount and updates the balance of the BankAccount.
 
     // GETTERS
 
