@@ -17,13 +17,24 @@ public class BankAccount {
         this.lastName = inputLastName;
         this.dateOfBirth = inputDateOfBirth;
         this.accountNumber = inputAccountNumber;
-        this.balance = 0.0;
+        this.balance = 0;
     }
 
     // METHODS / BEHAVIOURS
 
 //    Create a method called deposit() that takes in an amount updates the balance of the BankAccount.
 
+    //accept an amount as deposit
+    // add to balance
+    // increment += ammount
+
+    public void deposit(double amount){
+        balance += amount;
+    }
+
+    public void withdraw(double amount){
+        balance -= amount;
+    }
 
 //    Create a method called withdrawal() that takes in an amount and updates the balance of the BankAccount.
 
@@ -45,7 +56,7 @@ public class BankAccount {
         return this.accountNumber;
     }
 
-    public Float getBalance(){
+    public double getBalance(){
         return this.balance;
     }
 
