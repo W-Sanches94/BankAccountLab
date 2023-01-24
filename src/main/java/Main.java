@@ -15,8 +15,22 @@ public class Main {
                 "jane",
                 "doe",
                 LocalDate.of(1985,02,07),
-                27126059,
+                51143691,
                 9803.72);
 
+        BankAccount bankAccount3 = new BankAccount(
+                "emily",
+                "stuart",
+                LocalDate.of(1985,02,07),
+                61078526,
+                8267.10);
+
+        bankAccount3.deposit(1298);
+        System.out.println(bankAccount3.getBalance());
+
+        bankAccount.withdraw(500);
+        System.out.println(bankAccount.getBalance());
+
     }
+
 }

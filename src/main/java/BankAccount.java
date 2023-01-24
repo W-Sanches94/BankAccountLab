@@ -17,7 +17,7 @@ public class BankAccount {
         this.lastName = inputLastName;
         this.dateOfBirth = inputDateOfBirth;
         this.accountNumber = inputAccountNumber;
-        this.balance = 0;
+        this.balance = balance;
     }
 
     // METHODS / BEHAVIOURS
@@ -32,11 +32,11 @@ public class BankAccount {
         balance += amount;
     }
 
+//    Create a method called withdrawal() that takes in an amount and updates the balance of the BankAccount.
+
     public void withdraw(double amount){
         balance -= amount;
     }
-
-//    Create a method called withdrawal() that takes in an amount and updates the balance of the BankAccount.
 
     // GETTERS
 
@@ -78,7 +78,7 @@ public class BankAccount {
         this.accountNumber = accountNumber;
     }
 
-    public void setBalance(Float balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 }
